@@ -1,0 +1,18 @@
+---Aula modulos---
+
+import matematica
+
+from matematica import fatorial
+
+matematica.fatorial(5)
+import matematica as mt -> (forma de apelidar a biblioteca)
+mt.potencia(2, 3)
+
+O comando 'as' serve para apelidar
+
+import modulos.caracteres ---> importando de modulo
+
+__doc__
+__name__
+__main__
+__file__
