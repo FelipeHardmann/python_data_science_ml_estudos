@@ -1,0 +1,6 @@
+join
+split
+list comprenhension
+randint
+__rapr__
+__str__
