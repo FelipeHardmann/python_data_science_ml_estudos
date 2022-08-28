@@ -9,14 +9,18 @@ while True:
         input('Categoria: '),
         input('Descrição: ')
     )
-
+    listas_produtos.append(produto1)
     if input('Deseja continuar? (N ou n)') in 'Nn':
         break
 
-    listas_produtos.append(produto1)
+   
 
 for prod in listas_produtos:
     print('-' * 20)
     print(
-        
+        prod.nome,
+        prod.preco,
+        prod.categoria,
+        prod.descricao,
+        sep='\n'
     )
