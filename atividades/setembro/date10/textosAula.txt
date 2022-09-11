@@ -1,0 +1,6 @@
+def dentro da classe é chamado de método
+Estudar Dunders
+Getteres e Setters
+@property -> getter que recupera o valor e transforma objeto em atributo
+Getters e Setters só são criaddos quano eu tiver um dado sensível e protegido
+ctrl + ;
