@@ -2,8 +2,9 @@ from tkinter import messagebox
 import mysql.connector
 from tkinter import *
 from cores import *
+#importar dotenv e os
 
-def conectar():
+def conectar(event=None):
     try:
         conn = mysql.connector.connect(
             host='127.0.0.1',
@@ -13,15 +14,25 @@ def conectar():
             db='INFINITY'
         )
     except:
+        campoNome.delete(0, 'end')
+        campoSenha.delete(0, 'end')
+        campoNome.focus()
         messagebox.showerror('Erro', 'Erro ao conecctar no Banco de dados')
     else:
         messagebox.showinfo('conectado', 'Conexão realizada com sucesso')
+    finally:
+        campoNome.delete(0, 'end')
+        campoSenha.delete(0, 'end')
+        campoNome.focus()
+
+
 
 #Construindo minha janela
 janela = Tk()
 janela.title('Projeto 1')
 janela.geometry('310x300')
 janela.resizable(width=False, height=False)
+janela.bind('<Return>', conectar)
 
 #Dividindo em frames
 frameSuperior = Frame(
