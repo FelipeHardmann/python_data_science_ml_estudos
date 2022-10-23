@@ -1,0 +1,4 @@
+greenlet==1.1.3.post0
+mysql-connector-python==8.0.31
+protobuf==3.20.1
+SQLAlchemy==1.4.42
