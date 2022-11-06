@@ -20,6 +20,5 @@ db=os.getenv('db')
 
 engine = create_engine(
     url=f'mysql+mysqlconnector://{user}{host}:{port}/{db}',
-    echo=True
 )
 
